@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-inter font-light text-gray-900;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-philosopher font-bold;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#D4A574] hover:bg-[#C49564] text-white font-philosopher font-bold py-3 px-8 rounded-full transition-colors duration-300;
+  }
+  
+  .section-title {
+    @apply font-philosopher font-bold text-4xl md:text-5xl text-center mb-12;
+  }
+  
+  .subtitle {
+    @apply font-philosopher font-normal text-xl md:text-2xl text-center mb-8;
+  }
+}
